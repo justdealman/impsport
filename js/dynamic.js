@@ -11,6 +11,8 @@
 	$('.footer .nav li:first-child').css({'margin-left': margin + 'px'});
 });
 $(document).ready(function() {
+	$('.countdown > div').countdown({until: new Date(2014, 5-1, 15, 12)}); // 15 мая 2014, 12:00
+	$('.landing .review > div').append('<span></span>');
 	$('.popup').append('<button class="close"></div>');
 	$('.top .login li a.enter').click(function() {
 		$('.popup.login').css({'top': '53px', 'bottom': 'auto', 'margin-right': '-94px'});

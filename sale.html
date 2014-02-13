@@ -11,6 +11,9 @@
 	<script type="text/javascript" src="./js/easing.js"></script>
 	<script type="text/javascript" src="./js/uniform.js"></script>
 	<script type="text/javascript" src="./js/zoom.js"></script>
+	<script type="text/javascript" src="./js/jquery.plugin.min.js"></script>
+	<script type="text/javascript" src="./js/jquery.countdown.js"></script>
+	<script type="text/javascript" src="./js/jquery.countdown-ru.js"></script>
 	<script type="text/javascript" src="./js/dynamic.js"></script>
 </head>
 <body>
@@ -128,96 +131,124 @@
 		<div class="panel">
 			<ul class="breadcrumbs">
 				<li><a href="#">Магазин</a></li>
-				<li>Информация</li>
+				<li>Акции</li>
 			</ul>
 		</div>
-		<div class="basket">
-			<h1><span>Моя корзина</span></h1>
-			<ul>
-				<li>
-					<div class="image">
-						<img src="./images/basket1.jpg" width="44" height="80" alt="">
+		<div class="landing">
+			<div class="title">
+				<p>Вы не сможете найти дешевле! <span><em><em>распродажа</em></em></span></p>
+				<p>закажи сейчас и получи скидку от 3000 до 5000 руб!</p>
+			</div>
+			<div class="main">
+				<div class="offer">
+					<ul>
+						<li><h3>Сноубордические комплекты</h3></li>
+						<li><h4>от 8700 руб!</h4></li>
+					</ul>
+					<div>
+						<img src="./images/offer.png" width="309" height="317" alt="">
 					</div>
-					<div class="info">
-						<h3><strong>Штаны</strong> Rehall Lola (2013)</h3>
-						<p class="size"><em>Размер:</em> <span>“М”</span></p>
-						<div class="color">
-							<p>Цвет:</p>
-							<div class="red">
-								<span><em></em></span>
-								<p>Красный</p>
-							</div>
+				</div>
+				<div class="action">
+					<div class="countdown">
+						<p>До конца акции осталось</p>
+						<div></div>
+					</div>
+					<div class="form">
+						<h3>Закажи бесплатный звонок!</h3>
+						<p><input type="text" placeholder="Имя*"></p>
+						<p><input type="text" placeholder="Телефон*"></p>
+						<p><input type="text" placeholder="Email"></p>
+						<div><button class="submit">Заказать</button></div>
+					</div>
+				</div>
+			</div>
+			<div class="information">
+				<h2>Как мы работаем:</h2>
+				<p><strong>Наша цель</strong> - сделать для вас сноуборд доступным!</p> 
+				<p>Мы работаем с официальными представителями и дилерами, что позволяет нам делать максимально низкие цены.</p>
+				<ul class="skill">
+					<li>
+						<div class="picture">
+							<img src="./images/skill_pro.png" width="163" height="152" alt="">
 						</div>
-					</div>
-					<h5><em>Цена:</em> 5 456<span>c</span></h5>
-					<p class="quantity">
-						<strong>Количество</strong>
-						<span class="minus"></span>
-						<input type="text" value="1">
-						<span class="plus"></span>
-					</p>
-					<button class="delete"></button>
-				</li>
-				<li>
-					<div class="image">
-						<img src="./images/basket2.jpg" width="64" height="65" alt="">
-					</div>
-					<div class="info">
-						<h3><strong>Штаны</strong> Rojo Frankly Speaking (2013)</h3>
-						<p class="size"><em>Размер:</em> <span>“М”</span></p>
-						<div class="color">
-							<p>Цвет:</p>
-							<div class="red">
-								<span><em></em></span>
-								<p>Красный</p>
-							</div>
+						<div class="text">
+							<p>— Не трать своё время на поиски сноуборда. Если <strong>ты опытный райдер</strong> и точно знаешь, что тебе нужно, просто узнай у нашего менеджера стоимость нужного товара и сроки доставки!</p>
 						</div>
-					</div>
-					<h5><em>Цена:</em> 5 456<span>c</span></h5>
-					<p class="quantity">
-						<strong>Количество</strong>
-						<span class="minus"></span>
-						<input type="text" value="1">
-						<span class="plus"></span>
-					</p>
-					<button class="delete"></button>
-				</li>
-				<li>
-					<div class="image">
-						<img src="./images/basket3.jpg" width="80" height="46" alt="">
-					</div>
-					<div class="info">
-						<h3><strong>Маска</strong> Bluetribe Scatch (2014)</h3>
-						<p class="size"><em>Размер:</em> <span>“М”</span></p>
-						<div class="color">
-							<p>Цвет:</p>
-							<div class="red">
-								<span><em></em></span>
-								<p>Красный</p>
-							</div>
+					</li>
+					<li>
+						<div class="picture">
+							<img src="./images/skill_beginner.png" width="169" height="149" alt="">
 						</div>
-					</div>
-					<h5><em>Цена:</em> 5 456<span>c</span></h5>
-					<p class="quantity">
-						<strong>Количество</strong>
-						<span class="minus"></span>
-						<input type="text" value="1">
-						<span class="plus"></span>
-					</p>
-					<button class="delete"></button>
-				</li>
-			</ul>
-			<h5><em>Цена:</em> 16 368<span>c</span></h5>
-			<div class="options">
-				<ul class="nav">
-					<li class="back"><< <a href="#">Вернуться в каталог</a></li>
-					<li><a href="#">Очистить</a></li>
-					<li><a href="#">Пересчитать</a></li>
+						<div class="text">
+							<p>— Если <strong>ты новичок</strong>, то профессиональные консультанты помогут тебе сделать правильный выбор! </p>
+						</div>
+					</li>
 				</ul>
-				<ul class="buttons">
-					<li><button class="buy">Купить быстро</button></li>
-					<li><button class="order">Оформить заказ</button></li>
+				<h5>Мы уверены, что наше предложение лучшее, поэтому, если ты сможешь найти такой же товар дешевле, мы готовы сделать ещё более выгодное предложение!</h5>
+				<ul class="benefits">
+					<li>
+						Десятки мировых брендов сноубордов и экипировки! Доставка по всей России!
+						<img src="./images/landing_info_icon1.png" width="36" height="43" class="icon1" alt="">
+					</li>
+					<li>
+						Модели для новичков и профессионалов по самым привлекательным ценам!
+						<img src="./images/landing_info_icon2.png" width="32" height="35" class="icon2" alt="">
+					</li>
+					<li>
+						Технологичное, улучшенное снаряжение по цене обычного! 
+						<img src="./images/landing_info_icon3.png" width="25" height="35" class="icon3" alt="">
+					</li>
 				</ul>
+			</div>
+			<div class="review">
+				<h2><span>Отзывы наших покупателей:</span></h2>
+				<div>
+					<div>
+						<img src="./images/landing_review1.jpg" width="135" height="165" alt="">
+						<div>
+						<p>Спасибо большое за мою первую доску, на самом деле не ожидал что будет моя ростовка за такую приемлимую цену, да нервы и волнения с первой доской) жду не дождусь завтрашней обкатки) Удачи, развивайтесь и надеюсь это моя не последняя покупка у вас) <a href="#">http://vk.com/laurien</a></p>
+						</div>
+						<h4><strong>Роман</strong></h4>
+					</div>
+					<div>
+						<img src="./images/landing_review2.jpg" width="135" height="165" alt="">
+						<div>
+						<p>А вот и отзыв мой! Купила в Империи спорта досочку Arny 5000, рекомендованную ребятами как прекрасную для джиббинга, фрирайда и прочих таких утех. Результаты превзошли ожидания - невероятно управляемый девайс! На выходных в Шерегеше забуривалась изящно в самые густые елки, собирала все трамплины. Ура! Отдых просто класс, спасибо!!! <a href="#">http://vk.com/pogrebusha</a></p>
+						</div>
+						<h4><strong>Ксения</strong></h4>
+					</div>
+					<div>
+						<img src="./images/landing_review3.jpg" width="135" height="165" alt="">
+						<div>
+						<p>Хочу выразить огромную благодарность Империи спорта! Дело в том, что мы с сыном абсолютные чайники...надо было выбрать борд... Нашёл телефон и позвонил. Учли все нюансы и предложил не самый дорогой борд, а тот, который действительно подходит!!!</p>
+						<p>Сделал я предоплату 100% ,через 2 дня борд у нас!!! Всё честно и без проблем! Так что всем рекомендую заказывать и консультироваться у империи!!! Ещё раз СПАСИБО, с вами приятно иметь дело! <a href="#">http://vk.com/id157230124</a></p>
+						</div>
+						<h4><strong>Ксения</strong></h4>
+					</div>
+				</div>
+			</div>
+			<div class="main">
+				<div class="offer">
+					<ul>
+						<li><h3>Сноубордические комплекты</h3></li>
+						<li><h4>от 8700 руб!</h4></li>
+					</ul>
+					<div class="tip">
+						<p>Успей заказать сегодня!</p>
+						<p>время акции ограниченно!</p>
+					</div>
+					<h5>+ 8 800 775-28-25</h5>
+				</div>
+				<div class="action">
+					<div class="form">
+						<h3>Закажи бесплатный звонок!</h3>
+						<p><input type="text" placeholder="Имя*"></p>
+						<p><input type="text" placeholder="Телефон*"></p>
+						<p><input type="text" placeholder="Email"></p>
+						<div><button class="submit">Заказать</button></div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
